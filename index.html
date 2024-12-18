@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Estakulikuler IT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 id="title">Pendaftaran Estakulikuler IT</h1>
+    <p id="description">Formulir pendaftaran untuk bergabung dengan kegiatan estakulikuler IT di sekolah.</p>
+
+    <form id="survey-form" action="#" method="POST">
+
+        <!-- Name Field -->
+        <label id="name-label" for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+
+        <!-- Email Field -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email yang valid" required>
+
+        <!-- Number Field -->
+        <label id="number-label" for="number">Usia:</label>
+        <input type="number" id="number" name="number" placeholder="Masukkan usia Anda" min="10" max="100" required>
+
+        <!-- Dropdown -->
+        <label for="dropdown">Pilih kegiatan:</label>
+        <select id="dropdown" name="dropdown" required>
+            <option value="coding">Coding</option>
+            <option value="networking">Networking</option>
+            <option value="hardware">Hardware</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p>Jenis kegiatan yang Anda minati:</p>
+        <label for="radio1">
+            <input type="radio" id="radio1" name="activity" value="online" required> Online
+        </label>
+        <label for="radio2">
+            <input type="radio" id="radio2" name="activity" value="offline" required> Offline
+        </label>
+
+        <!-- Checkboxes -->
+        <p>Keahlian yang dimiliki:</p>
+        <label for="skill1">
+            <input type="checkbox" id="skill1" name="skills" value="programming"> Pemrograman
+        </label>
+        <label for="skill2">
+            <input type="checkbox" id="skill2" name="skills" value="networking"> Jaringan
+        </label>
+        <label for="skill3">
+            <input type="checkbox" id="skill3" name="skills" value="hardware"> Perangkat Keras
+        </label>
+
+        <!-- Textarea -->
+        <label for="comments">Komentar tambahan:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Tulis komentar atau harapan Anda di sini"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Kirim Pendaftaran</button>
+    </form>
+
+</body>
+
+</html>
+
